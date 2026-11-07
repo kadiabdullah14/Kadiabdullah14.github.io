@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Kadi Abdullah | كادي عبدالله، فنانة بصرية</title>
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="apple-touch-icon" href="logo.jpg">
+<meta name="description" content="Kadi Abdullah (كادي عبدالله): visual artist from Saudi Arabia working in painting, digital art and mixed media. معرض أعمال الفنانة البصرية كادي عبدالله.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kadi Abdullah | كادي عبدالله">
+<meta property="og:image" content="logo.jpg">
+<meta property="og:description" content="Visual artist from Saudi Arabia: painting, digital art, mixed media. معرض أعمال الفنانة البصرية كادي عبدالله.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500&display=swap">
+<style>
+/* Layout concept: the logo's dusty blue and cream lead. A blue bar and hero carry the signature at large size,
+   then a bone-coloured gallery wall with featured works, a quiet archive, CV, and a blue contact band with the mark. */
+:root {
+  --wall: #EFEBE3;
+  --plate: #F8F6F1;
+  --ink: #15181E;
+  --ink-2: #4A515C;
+  --rule: #D5CFC4;
+  --accent: #2F4E78;
+  --field: #3B5A80;
+  --field-glow: #5479A6;
+  --field-warm: #2C4666;
+  --field-ink: #F3EDE0;
+  --field-ink-2: #D2DAE6;
+  --field-rule: #587396;
+  --gold: #E9D9BC;
+  --font-display: 'Amiri', 'Noto Naskh Arabic', 'Times New Roman', serif;
+  --font-body: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, 'Noto Sans Arabic', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --wall: #0F1319;
+    --plate: #171C25;
+    --ink: #EDE8DD;
+    --ink-2: #A8B0BD;
+    --rule: #262E3A;
+    --accent: #9DB9DE;
+    --field: #2A4264;
+    --field-glow: #3B5A80;
+    --field-warm: #1D2E48;
+    --field-rule: #46628A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --wall: #0F1319;
+  --plate: #171C25;
+  --ink: #EDE8DD;
+  --ink-2: #A8B0BD;
+  --rule: #262E3A;
+  --accent: #9DB9DE;
+  --field: #2A4264;
+  --field-glow: #3B5A80;
+  --field-warm: #1D2E48;
+  --field-rule: #46628A;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  direction: rtl;
+  background: var(--wall);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.9;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+  overflow-x: clip;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  background: var(--field);
+}
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .25em; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+h1, h2, h3, p, figure, dl, dd { margin: 0; }
+h1, h2, h3 { text-wrap: balance; font-family: var(--font-display); font-weight: 700; line-height: 1.25; }
+p { text-wrap: pretty; }
+img { display: block; }
+bdi { unicode-bidi: isolate; }
+
+.band { margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px))); }
+.wrap {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+.page > .wrap { padding-left: 0; padding-right: 0; max-width: 1208px; }
+
+.eyebrow {
+  font-size: .76rem;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  direction: ltr;
+  text-align: right;
+}
+
+/* ---------- Top bar ---------- */
+.bar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 9;
+  background: var(--field);
+  color: var(--field-ink);
+  border-bottom: 1px solid var(--field-rule);
+}
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2px 28px; padding-block: 8px; }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; text-decoration: none; }
+.nav { display: flex; flex-wrap: wrap; gap: 0 24px; font-size: .92rem; color: var(--field-ink-2); }
+.nav a { text-decoration: none; padding-block: 6px; }
+.nav a:hover { color: var(--gold); }
+@media (max-width: 760px) { .bar { position: static; } }
+
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.mark { display: block; width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }
+.mark-lg { width: 92px; height: 92px; margin-bottom: 20px; }
+.sig { display: block; width: min(100%, 440px); height: auto; margin-bottom: 4px; filter: invert(1); mix-blend-mode: screen; }
+
+/* ---------- Hero ---------- */
+.hero {
+  color: var(--field-ink);
+  background:
+    radial-gradient(55% 85% at 88% 8%, var(--field-glow), transparent 62%),
+    radial-gradient(40% 55% at 6% 100%, var(--field-warm), transparent 72%),
+    var(--field);
+}
+.hero .wrap { padding-block: clamp(36px, 7vw, 88px); }
+.hero-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
+}
+.latin-name { font-family: var(--font-display); font-style: italic; font-size: clamp(1.2rem, 2.2vw, 1.6rem); color: var(--gold); direction: ltr; text-align: right; line-height: 1.3; }
+.hero h1 { font-size: clamp(3.4rem, 11vw, 8rem); line-height: 1.05; margin-block: .08em .2em; }
+.hero .role { font-size: 1.15rem; }
+.hero .thesis { margin-top: 10px; max-width: 36ch; color: var(--field-ink-2); font-weight: 300; font-size: 1.08rem; }
+.facts { margin-top: clamp(28px, 4vw, 48px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px clamp(16px, 3vw, 36px); border-top: 1px solid var(--field-rule); padding-top: 20px; }
+.facts dt { font-size: .76rem; letter-spacing: .06em; color: var(--gold); font-weight: 500; }
+.facts dd { font-size: .95rem; color: var(--field-ink); line-height: 1.7; }
+.hero-plate { border: 1px solid var(--field-rule); padding: 10px; background: rgba(255,255,255,.035); }
+.hero-plate img { margin-inline: auto; width: auto; max-width: 100%; height: auto; max-height: 66vh; }
+.hero-plate figcaption { font-size: .85rem; color: var(--field-ink-2); padding: 10px 2px 0; font-variant-numeric: tabular-nums; }
+@media (max-width: 860px) {
+  .hero-body { grid-template-columns: minmax(0, 1fr); }
+  .facts { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ---------- Sections ---------- */
+section { padding-block: clamp(56px, 9vw, 112px); }
+.sec-head { display: grid; gap: 4px; margin-bottom: clamp(28px, 5vw, 60px); }
+.sec-head h2 { font-size: clamp(2.2rem, 5vw, 3.3rem); }
+
+.statement { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(28px, 6vw, 88px); align-items: start; }
+.pull { font-family: var(--font-display); font-size: clamp(1.8rem, 3.6vw, 2.6rem); line-height: 1.55; font-weight: 700; text-wrap: balance; }
+.prose { display: grid; gap: 1.2em; max-width: 60ch; }
+.prose p { color: var(--ink-2); }
+@media (max-width: 760px) { .statement { grid-template-columns: minmax(0, 1fr); } }
+
+/* Featured works */
+.works { display: grid; gap: clamp(64px, 10vw, 128px); }
+.work { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(22px, 4.5vw, 64px); align-items: center; }
+.work--flip .label { order: -1; }
+.work--wide { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.work--wide .label { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 8px clamp(22px, 4.5vw, 64px); align-items: start; }
+.work--wide .label .head { grid-column: 1; }
+.work--wide .label .desc { grid-column: 2; }
+.work--wide .label { display: grid; }
+.plate { background: var(--plate); border: 1px solid var(--rule); padding: clamp(10px, 2.4vw, 26px); }
+.plate img { margin-inline: auto; width: auto; max-width: 100%; height: auto; max-height: 80vh; }
+.label { display: grid; gap: 12px; align-content: center; }
+.label h3 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
+.meta { font-size: .88rem; color: var(--accent); font-variant-numeric: tabular-nums; font-weight: 500; }
+.desc { color: var(--ink-2); max-width: 56ch; }
+@media (max-width: 760px) {
+  .work, .work--wide .label { grid-template-columns: minmax(0, 1fr); }
+  .work--flip .label { order: 0; }
+  .work--wide .label .head, .work--wide .label .desc { grid-column: 1; }
+}
+
+/* Archive */
+.archive { column-count: 3; column-gap: clamp(20px, 3vw, 44px); }
+.card { break-inside: avoid; margin-bottom: clamp(32px, 4vw, 56px); }
+.card-in { display: grid; gap: 12px; }
+.card h3 { font-size: 1.5rem; }
+.card .plate { padding: clamp(8px, 1.4vw, 14px); }
+.card .plate img { max-height: 70vh; }
+.pair { display: flex; gap: 8px; align-items: flex-end; }
+.pair > * { min-width: 0; }
+.pair img { width: 100%; max-height: none; }
+.latin-sub { font-size: .85rem; color: var(--ink-2); direction: ltr; text-align: right; font-family: var(--font-display); font-style: italic; }
+.note { font-size: .86rem; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 8px; }
+@media (max-width: 960px) { .archive { column-count: 2; } }
+@media (max-width: 560px) { .archive { column-count: 1; } }
+
+/* Stories */
+.stories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 5vw, 72px); }
+.story { display: grid; gap: 14px; align-content: start; }
+.story .plate img { max-height: 420px; }
+.story h3 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); }
+@media (max-width: 760px) { .stories { grid-template-columns: minmax(0, 1fr); } }
+
+.btn { justify-self: start; display: inline-block; border: 1px solid var(--ink); color: var(--ink); padding: 6px 22px; font-weight: 500; text-decoration: none; font-size: .95rem; }
+.btn:hover { background: var(--ink); color: var(--wall); }
+
+/* CV */
+.cv-wrap { background: var(--plate); border-block: 1px solid var(--rule); }
+.cv { display: grid; }
+.cv-row { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 8px clamp(20px, 4vw, 56px); padding-block: 24px; border-top: 1px solid var(--rule); }
+.cv-row:first-child { border-top: 0; }
+.cv-row h3 { font-size: 1.35rem; }
+.cv-row ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.cv-row li { color: var(--ink-2); }
+.cv-row li strong { color: var(--ink); font-weight: 500; }
+.cv-row .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.cv-row .tags li { border: 1px solid var(--rule); padding: 2px 14px; font-size: .95rem; color: var(--ink); }
+@media (max-width: 760px) { .cv-row { grid-template-columns: minmax(0, 1fr); } }
+
+/* Contact */
+.footer { color: var(--field-ink); background:
+    radial-gradient(55% 90% at 12% 0%, var(--field-glow), transparent 65%),
+    var(--field); }
+.footer .wrap { padding-block: clamp(56px, 9vw, 104px) 28px; }
+.footer h2 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin-top: 4px; }
+.footer .eyebrow { color: var(--gold); }
+.contacts { margin-top: clamp(28px, 5vw, 52px); display: grid; border-top: 1px solid var(--field-rule); }
+.contact { display: grid; grid-template-columns: 8rem minmax(0, 1fr) auto; gap: 8px 20px; align-items: center; padding-block: 18px; border-bottom: 1px solid var(--field-rule); }
+.contact .k { color: var(--field-ink-2); font-size: .95rem; }
+.contact .v { direction: ltr; text-align: right; font-size: clamp(1.05rem, 2.4vw, 1.4rem); overflow-wrap: anywhere; min-width: 0; }
+.contact a.v { text-decoration: none; }
+.contact a.v:hover { color: var(--gold); }
+.copy { font: inherit; font-size: .88rem; color: var(--field-ink); background: transparent; border: 1px solid var(--field-rule); padding: 6px 16px; cursor: pointer; }
+.copy:hover { border-color: var(--gold); }
+.copy-note { min-height: 1.2em; font-size: .85rem; color: var(--field-ink-2); margin-top: 8px; }
+.fine { margin-top: 32px; font-size: .82rem; color: var(--field-ink-2); }
+@media (max-width: 760px) {
+  .contact { grid-template-columns: minmax(0, 1fr) auto; }
+  .contact .k { grid-column: 1 / -1; }
+}
+</style>
+
+
+</head>
+<body>
+<div class="page" dir="rtl" lang="ar">
+
+<div class="band bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img class="mark" src="logo.jpg" width="480" height="480" alt=""><span>كادي عبدالله</span></a>
+    <nav class="nav" aria-label="أقسام الموقع">
+      <a href="#statement">البيان</a>
+      <a href="#works">الأعمال</a>
+      <a href="#stories">قصص مصورة</a>
+      <a href="#cv">السيرة</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </div>
+</div>
+
+<header class="band hero" id="top">
+  <div class="wrap">
+    <div class="hero-body">
+      <div>
+        <img class="sig" src="signature.jpg" width="1400" height="509" alt="توقيع كادي عبدالله Kadi Abdullah">
+        <h1>كادي عبدالله</h1>
+        <p class="role">فنانة بصرية، متخصصة في التصوير التشكيلي</p>
+        <p class="thesis">أعمال عن الإدراك والذاكرة، تتنقل بين الوضوح والغموض.</p>
+        <dl class="facts">
+          <div>
+            <dt>التعليم</dt>
+            <dd>بكالوريوس فنون بصرية، جامعة الأميرة نورة بنت عبدالرحمن</dd>
+          </div>
+          <div>
+            <dt>التخصص</dt>
+            <dd>التصوير التشكيلي</dd>
+          </div>
+          <div>
+            <dt>الوسائط</dt>
+            <dd>تصوير، رسم رقمي، خامات متعددة</dd>
+          </div>
+        </dl>
+      </div>
+      <figure class="hero-plate">
+        <img src="rahn.jpg" width="1769" height="1800" alt="فتاة بفستان أحمر تصعد على أجهزة تصوير مكدسة نحو طاووس يقف على عدسة ضخمة، وأوراق صور تتساقط على أرضية خشبية">
+        <figcaption>رَهَن، سبتمبر 2025</figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="statement">
+  <div class="sec-head">
+    <p class="eyebrow">Artist Statement</p>
+    <h2>بيان الفنانة</h2>
+  </div>
+  <div class="statement">
+    <p class="pull">العمل الفني مساحة مفتوحة للتفكير، لا وسيلة لتقديم إجابات جاهزة.</p>
+    <div class="prose">
+      <p>أعمل في التصوير التشكيلي والرسم الرقمي والخامات المتعددة، وتنطلق أعمالي من سؤال واحد: كيف يتشكل وعينا بالواقع؟ أبحث عن جوابه في الذاكرة ووجهات النظر والصراعات الداخلية، وأبني له مشاهد رمزية من طبقات بصرية وتباينات بين الوضوح والغموض.</p>
+      <p>أسعى إلى إبطاء وتيرة التلقي، ودفع المشاهد إلى إعادة التفكير في إدراكه للعالم ومواجهة التناقضات الإنسانية بهدوء وصراحة.</p>
+      <p>أطمح إلى تطوير أعمالي بحيث تساعد المشاهد على اختبار حدود إدراكه، وتفتح حواراً حول العلاقة بين التجربة الشخصية والحقيقة التي نعتقد أننا نراها.</p>
+    </div>
+  </div>
+</section>
+
+<section id="works" style="padding-top:0">
+  <div class="sec-head">
+    <p class="eyebrow">Selected Works</p>
+    <h2>أعمال مختارة</h2>
+  </div>
+
+  <div class="works">
+
+    <article class="work">
+      <div class="plate"><img src="rahn.jpg" width="1769" height="1800" loading="lazy" alt="فتاة بفستان أحمر تصعد على أجهزة تصوير مكدسة نحو طاووس يقف على عدسة ضخمة"></div>
+      <div class="label">
+        <h3>رَهَن</h3>
+        <p class="meta">زيت على كانفس · سبتمبر 2025 · 100 × 100 سم</p>
+        <p class="desc">لم تعد الصورة عند كثيرين مجرد وسيلة لتوثيق اللحظة، بل تحولت إلى هوس يسيطر على الوعي المجتمعي، فصار الناس يسعون إلى المثالية مهما كان الثمن، وفقدت الصورة معناها حين فقدت عفويتها. في هذا العمل تتسلق فتاة كومة من آلات التصوير، وكل آلة فيها محاولة جديدة لتجميل الواقع بدل عيشه. وفوق العدسة يقف طاووس ينظر إلى نفسه دون وعي، يجسد الفخر والمثالية الزائفة، والفتاة تحاول أن تبلغه. وتتجاهل الفتاة أوراقاً تتساقط تحتها، وهي ذكريات أُهملت جراء هذا السعي. يدعو العمل إلى استعادة التوازن بين أن نعيش اللحظة وأن نوثقها.</p>
+      </div>
+    </article>
+
+    <article class="work work--wide">
+      <div class="plate"><img src="eye.jpg" width="1800" height="1273" loading="lazy" alt="عين ضخمة معلقة في سماء زرقاء فوق صحراء متشققة، مع زهرة لوتس وجمجمة وقناعين"></div>
+      <div class="label">
+        <div class="head">
+          <h3>بين الأضداد</h3>
+          <p class="meta">12 فبراير 2025 · رسم رقمي</p>
+        </div>
+        <p class="desc">مشهد سريالي يجمع المتناقضات في لوحة واحدة: صحراء جافة متشققة تحت سماء مشرقة، وعناصر غريبة عن المكان لا تخضع لمنطق الواقع. تمثل العين المعلقة في السماء الإدراك والمراقبة، وتعبّر الأرض المتشققة والأجزاء المتناثرة عن عدم الاستقرار والتوتر بين الحضور والغياب. يقوم العمل على ثنائيات متقابلة: الواقع والخيال، والنظام والفوضى، والامتلاء والفراغ، ويدعو المشاهد إلى التأمل في التناقضات التي تحيط بحياتنا اليومية.</p>
+      </div>
+    </article>
+
+    <article class="work work--flip">
+      <div class="plate"><img src="veil.jpg" width="1755" height="1800" loading="lazy" alt="قماش رمادي مطوي يكشف شريطاً أبيض يمتد نحو بكرات فيلم على خلفية داكنة"></div>
+      <div class="label">
+        <h3>خلف حجاب المجهول</h3>
+        <p class="meta">22 أبريل 2025 · خامات متعددة</p>
+        <p class="desc">يتناول العمل فكرة المجهول بوصفها تجربة تبدأ بالغموض وتنتهي بالوضوح تدريجياً. في البداية يبدو المشهد فوضى لا يمكن فهمها، لكن مع طول التأمل تبدأ عناصره بالترابط ويظهر معناه العميق. تعبّر الخامات المتعددة عن حالة التشويش وعدم الاستقرار، ويمثل القماش لحظة الصدمة الأولى أمام المجهول، أما الشريط الأبيض فيربط بين الأجزاء ويقود إلى الفهم. ويطرح العمل سؤالاً: كيف ندرك ما هو غامض، وكيف ننتقل من الفوضى إلى النظام مع مرور الوقت؟</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="archive" style="padding-top:0">
+  <div class="sec-head">
+    <p class="eyebrow">More Works</p>
+    <h2>أعمال أخرى</h2>
+  </div>
+
+  <div class="archive">
+
+    <article class="card"><div class="card-in">
+      <div class="plate">
+        <div class="pair">
+          <img style="flex:277 1 0" src="triptych.jpg" width="277" height="667" loading="lazy" alt="ثلاث لوحات صغيرة بأوراق نباتية زرقاء وبرتقالية">
+          <img style="flex:430 1 0" src="portrait.jpg" width="430" height="764" loading="lazy" alt="امرأة مغمضة العينين تحمل ثمرة خضراء قرب وجهها">
+        </div>
+      </div>
+      <h3>بدون عنوان</h3>
+      <p class="meta">تجربة · أكريليك على كانفس · 13 مايو 2026</p>
+    </div></article>
+
+    <article class="card"><div class="card-in">
+      <div class="plate"><img src="may19.jpg" width="970" height="709" loading="lazy" alt="امرأة تميل رأسها بين أوراق صبار وأشكال هندسية ملونة وشمس صفراء"></div>
+      <h3>بدون عنوان</h3>
+      <p class="meta">تجربة · أكريليك على كانفس · 19 أبريل 2026</p>
+    </div></article>
+
+    <article class="card"><div class="card-in">
+      <div class="plate"><img src="tunnel.jpg" width="733" height="1020" loading="lazy" alt="نفق حلزوني ذهبي تمتد فيه يد آلية ويد إنسانية، وبينهما فراشة بنفسجية وقطع متناثرة"></div>
+      <h3>ما لا تمحوه الآلة</h3>
+      <p class="meta">زيت على كانفس · 1 يونيو 2024 · 50 × 70 سم</p>
+      <p class="desc">يتناول العمل تأثير التكنولوجيا المتزايد في حياة الإنسان، حيث تتداخل الآلة مع الجسد في إشارة إلى سيطرتها على وعينا. ومع هذا الزحف تبقى بعض القيم راسخة لا تتغير، مثل قيمة العائلة. وتظهر الفراشة رمزاً للروح كما في الأساطير اليابانية، لتعبّر عن جوهر إنساني لا تستطيع التقنية أن تمحوه. يدعو العمل إلى التأمل فيما يتغير داخلنا وفيما يبقى ثابتاً رغم كل التحولات.</p>
+    </div></article>
+
+    <article class="card"><div class="card-in">
+      <div class="plate"><img src="camel.jpg" width="1273" height="1800" loading="lazy" alt="جمل يسير في صحراء ذات خطوط متدفقة، ونخيل وأبراج حديثة في الأفق بألوان متوهجة"></div>
+      <h3>امتداد</h3>
+      <p class="meta">أبريل 2023 · رسم رقمي</p>
+      <p class="desc">يتحدث العمل عن امتدادنا نحن أبناء الصحراء الراسخة، وعن كيف صرنا إلى ما نحن عليه اليوم. تتدفق خطوط الصحراء في مشهد سريالي نابض بالحياة، بين النخيل والإبل، وتقود الألوان المتوهجة نظر المشاهد إلى الأبراج الحديثة في الخلفية، فيلتقي الماضي بالحاضر والواقع بالخيال.</p>
+    </div></article>
+
+    <article class="card"><div class="card-in">
+      <div class="plate"><img src="study.jpg" width="1270" height="1800" loading="lazy" alt="فتاة بفستان فاتح تعزف على الكمان أمام خلفية داكنة"></div>
+      <h3>دراسة تشريحية</h3>
+      <p class="meta">زيت على كانفس</p>
+      <p class="latin-sub">After John Collier, The Sonatina, 1883</p>
+      <p class="desc">دراسة مستوحاة من لوحة «السوناتينا» (1883) للفنان جون كولير. تهدف إلى فهم بنية الجسم البشري ونسبه وشكله عن طريق الملاحظة وإعادة المعالجة الفنية، وقد أُنجزت ضمن تطوير المهارات التقنية في الرسم.</p>
+      <p class="note">الحقوق الفكرية للعمل الأصلي تعود إلى جون كولير. هذه الدراسة لأغراض تعليمية فقط.</p>
+    </div></article>
+
+    <article class="card"><div class="card-in">
+      <div class="plate"><img src="ship.jpg" width="1800" height="1800" loading="lazy" alt="سفينة شراعية داخل دوامات من الموج بألوان رمادية وبرتقالية"></div>
+      <h3>تجري الرياح بما شاء الإلهُ لها</h3>
+      <p class="meta">رسم رقمي</p>
+    </div></article>
+
+  </div>
+</section>
+
+<section id="stories" style="padding-top:0">
+  <div class="sec-head">
+    <p class="eyebrow">Illustrated Stories</p>
+    <h2>قصص مصورة</h2>
+  </div>
+  <div class="stories">
+    <article class="story">
+      <div class="plate"><img src="comic-loss.jpg" width="497" height="521" loading="lazy" alt="غلاف قصة الخسارة بداية الفوز: طائرة ورقية سوداء بين كفين"></div>
+      <h3>الخسارة بداية الفوز</h3>
+      <p class="meta">مانغا موجهة للمراهقين</p>
+      <p class="desc">قصة عن عواقب التسرع والغرور، في مقابل قيمتي الصبر والاجتهاد. بسرد بصري مبسط، يُظهر العمل كيف يتحول الإخفاق إلى فرصة للتعلم والتطور، ويعزز قيم المثابرة والروح الرياضية والإصرار على المحاولة من جديد.</p>
+      <a class="btn" href="https://heyzine.com/flip-book/f85ab0839a.html" target="_blank" rel="noopener">اقرأ القصة</a>
+    </article>
+    <article class="story">
+      <div class="plate"><img src="comic-clock.jpg" width="542" height="485" loading="lazy" alt="غلاف قصة أين ساعة جدي: ولد يركض في غابة"></div>
+      <h3>أين ساعة جدي؟</h3>
+      <p class="meta">قصة مصورة تفاعلية للأطفال من 3 إلى 5 سنوات · عمل مشترك</p>
+      <p class="desc">تجمع القصة بين السرد البصري والأنشطة التفاعلية لتشجع الطفل على المشاركة في أحداثها، وتنمّي لديه قيم الشجاعة والتعاون وحب الاستكشاف عبر تجربة قرائية ممتعة.</p>
+      <a class="btn" href="https://heyzine.com/flip-book/389a966a06.html" target="_blank" rel="noopener">اقرأ القصة</a>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<div class="band cv-wrap" id="cv">
+  <div class="wrap" style="padding-block: clamp(56px, 9vw, 104px)">
+    <div class="sec-head">
+      <p class="eyebrow">CV</p>
+      <h2>السيرة الذاتية</h2>
+    </div>
+    <div class="cv">
+      <div class="cv-row">
+        <h3>التعليم</h3>
+        <ul>
+          <li><strong>بكالوريوس فنون بصرية، مسار التصوير التشكيلي</strong></li>
+          <li>جامعة الأميرة نورة بنت عبدالرحمن</li>
+        </ul>
+      </div>
+      <div class="cv-row">
+        <h3>المهارات الفنية</h3>
+        <ul class="tags">
+          <li>التصوير التشكيلي</li>
+          <li>أساسيات الطباعة والنحت والتصوير</li>
+          <li>الرسم الرقمي</li>
+          <li>معالجة الصور</li>
+          <li><bdi lang="en">Illustrator</bdi></li>
+          <li><bdi lang="en">Procreate</bdi></li>
+          <li><bdi lang="en">Adobe Express</bdi></li>
+        </ul>
+      </div>
+      <div class="cv-row">
+        <h3>المهارات المهنية</h3>
+        <ul class="tags">
+          <li>العمل ضمن فريق</li>
+          <li>إدارة الوقت والالتزام بالمواعيد</li>
+          <li>تقبّل النقد والتطوير المستمر</li>
+          <li>الإبداع والابتكار</li>
+        </ul>
+      </div>
+      <div class="cv-row">
+        <h3>الشهادات</h3>
+        <ul>
+          <li><bdi lang="en">Art of the MOOC: Activism and Social Movements</bdi> · جامعة ديوك عبر Coursera، 2026</li>
+          <li><bdi lang="en">Art of the MOOC: Experiments with Sound</bdi> · جامعة ديوك عبر Coursera، 2026</li>
+          <li><bdi lang="en">Art of the MOOC: Public Art and Pedagogy</bdi> · جامعة ديوك عبر Coursera، 2026</li>
+          <li><bdi lang="en">Art of the MOOC: Colors, Bodies, Power</bdi> · جامعة ديوك عبر Coursera، 2026</li>
+          <li><bdi lang="en">Essentials of Microsoft Word</bdi> · Coursera وجامعة الفيصل، 2026</li>
+          <li><bdi lang="en">Essentials of Microsoft Excel</bdi> · Coursera وجامعة الفيصل، 2026</li>
+        </ul>
+      </div>
+      <div class="cv-row">
+        <h3>التطوع</h3>
+        <ul>
+          <li><strong>متطوعة في فعالية العلاج بالفن</strong>، 2026</li>
+          <li>شهادة تطوع من المركز الوطني لتنمية القطاع غير الربحي، أُقيمت الفعالية في جامعة الأميرة نورة بنت عبدالرحمن</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="band footer" id="contact">
+  <div class="wrap">
+    <img class="mark mark-lg" src="logo.jpg" width="480" height="480" alt="شعار كادي عبدالله">
+    <p class="eyebrow">Contact</p>
+    <h2>تواصل</h2>
+    <div class="contacts">
+      <div class="contact">
+        <span class="k">إنستغرام</span>
+        <a class="v" href="https://www.instagram.com/artistt.k4" target="_blank" rel="noopener">@artistt.k4</a>
+        <span></span>
+      </div>
+      <div class="contact">
+        <span class="k">البريد الإلكتروني</span>
+        <span class="v" id="mail">kadiabdullah14@gmail.com</span>
+        <button class="copy" type="button" id="copy-mail">نسخ</button>
+      </div>
+      <div class="contact">
+        <span class="k">لينكدإن</span>
+        <a class="v" href="https://www.linkedin.com/in/kadi-al-harbi" target="_blank" rel="noopener">@kadi-al-harbi</a>
+        <span></span>
+      </div>
+    </div>
+    <p class="copy-note" id="copy-note" role="status" aria-live="polite"></p>
+    <p class="fine">© 2026 كادي عبدالله</p>
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy-mail');
+  var note = document.getElementById('copy-note');
+  var mail = document.getElementById('mail');
+  function selectMail() {
+    var r = document.createRange();
+    r.selectNodeContents(mail);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+  }
+  btn.addEventListener('click', function () {
+    var text = mail.textContent.trim();
+    var p;
+    try { p = navigator.clipboard.writeText(text); } catch (e) { p = Promise.reject(e); }
+    p.then(function () {
+      note.textContent = 'تم نسخ البريد الإلكتروني';
+    }).catch(function () {
+      selectMail();
+      note.textContent = 'حدّدنا البريد، انسخه من القائمة';
+    });
+    setTimeout(function () { note.textContent = ''; }, 2500);
+  });
+})();
+</script>
+
+</body>
+</html>
